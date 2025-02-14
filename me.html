@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshith Annabathula</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 99vh;
+            background-color: white;
+            font-family: "Roboto", sans-serif;
+            text-align: left;
+            flex-direction: column;
+        }
+        p { 
+            opacity: 0;
+            transform: translateY(20px);
+            font-size: 1.3rem;
+            font-weight: 450;
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            max-width: 600px;
+            text-align: left;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <p id="para1">Hey! I’m Harshith. I'm a freshman at Panther Creek High School with a deep passion for science, medicine, and helping others. My goal is to become a medical professional who makes a meaningful difference in people’s lives. I believe that being a great doctor requires more than just knowledge—it also demands empathy, dedication, and strong communication skills. These values guide me in everything I do, from collaborating on school projects to volunteering in my community and striving for excellence in my studies. My curiosity about how science and medicine solve complex problems motivates me to build a strong foundation in critical thinking and problem-solving.</p>
+    <p id="para2">Beyond academics, I value teamwork, resilience, and determination, qualities that help me contribute positively to any group I’m part of. I approach challenges with a problem-solving mindset, seeing them as opportunities to learn and grow. Whether working on a project, helping others, or overcoming obstacles, I embrace every experience with enthusiasm and a commitment to improvement. My ultimate goal is to combine my love of science with my desire to help others, becoming a doctor who provides excellent care and inspires trust. For now, I am dedicated to gaining the knowledge, skills, and experiences that will prepare me for this journey.</p>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let paragraphs = document.querySelectorAll("p");
+            paragraphs.forEach((para, index) => {
+                setTimeout(() => {
+                    para.style.opacity = "1";
+                    para.style.transform = "translateY(0)";
+                }, index * 500);
+            });
+        });
+    </script>
+</body>
+</html>
